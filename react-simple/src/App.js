@@ -59,7 +59,7 @@ function App() {
         <div className="wrapper">
           <div className="main-image">
             <img
-              src="images/Image00001.jpg"
+              src="https://picsum.photos/id/279/1000/1000?grayscale&blur=2"
               alt="l'essence de la maison"
               className="img"
             />
