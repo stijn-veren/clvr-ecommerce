@@ -10,15 +10,33 @@ i18n
     resources: {
       en: {
         translation: {
-          header: {
-            greetings: 'Hello, World!',
+          site: {
+            title: "Stijn Veren's Art",
+          },
+          menu: {
+            abstract: 'abstract',
+            landscapes: 'landscapes',
+            other: 'other',
+            about: 'about',
+            contacts: 'contacts',
+            terms: 'terms and conditions',
+            privacy: 'privacy policy',
           },
         },
       },
       nl: {
         translation: {
-          header: {
-            greetings: 'Hallo Wereld!',
+          site: {
+            title: "Stijn Veren's Kunst",
+          },
+          menu: {
+            abstract: 'abstract',
+            landscapes: 'landschappen',
+            other: 'ander',
+            about: 'over',
+            contacts: 'contacten',
+            terms: 'voorwaarden',
+            privacy: 'privacybeleid',
           },
         },
       },
