@@ -207,7 +207,7 @@ header .wrapper {
 }
 
 header .wrapper.lang {
-  justify-content: flex-end;
+  flex-direction: row;
 }
 
 header .wrapper.lang button {
@@ -237,6 +237,7 @@ header h1 {
   width: 100%;
 }
 
+main .main-image,
 main .main-image img,
 main img {
   width: 100%;
@@ -283,6 +284,10 @@ footer {
 
 header {
   padding-top: 40px;
+}
+
+header .wrapper.lang {
+  justify-content: center;
 }
 
 header .left-col {
@@ -357,6 +362,12 @@ footer {
   header .wrapper,
   footer .wrapper {
     padding: 0;
+  }
+
+  header .wrapper.lang {
+    justify-content: flex-end;
+    position: relative;
+    right: -6px;
   }
 
   header .left-col {
