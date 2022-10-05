@@ -1,0 +1,27 @@
+#index {
+  box-shadow: none;
+}
+
+#index .wrapper {
+  width: 100%;
+}
+
+/* ### For tablets: ### */
+
+@media only screen and (min-width: 600px) {
+}
+
+/* ### For small laptop: ### */
+
+@media only screen and (min-width: 1024px) {
+  #index .wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ### For desktop: ### */
+
+@media only screen and (min-width: 1440px) {
+}

@@ -1,0 +1,180 @@
+/* ### menu ### */
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  text-align: center;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  display: flex;
+  margin: 10px 15px;
+  height: 38px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .active a {
+  color: #000000;
+  font-weight: 600;
+  border-bottom: 1px solid #78909c;
+}
+
+.menu a:hover,
+.menu a:active {
+  color: #263238;
+}
+
+/* ### header ### */
+
+header {
+  margin-bottom: 30px;
+}
+
+header .wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .wrapper.lang {
+  flex-direction: row;
+}
+
+header .wrapper.lang button {
+  background-color: transparent;
+  border: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ### For mobile phones: ### */
+
+header {
+  padding-top: 40px;
+}
+
+header .wrapper.lang {
+  justify-content: center;
+}
+
+header .left-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  text-align: left;
+}
+
+#index main .wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+header .wrapper,
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+header .wrapper {
+  flex-direction: column;
+}
+
+.menu {
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  width: 100%;
+}
+
+/* ### For tablets: ### */
+
+@media only screen and (min-width: 600px) {
+  header {
+    padding-top: 60px;
+  }
+
+  header .wrapper {
+    padding: 0;
+  }
+
+  header .wrapper.lang {
+    justify-content: flex-end;
+    position: relative;
+    right: -6px;
+  }
+
+  header .left-col {
+    margin-bottom: 0;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu li:last-child a {
+    margin-right: 0;
+  }
+}
+
+/* ### For small laptop: ### */
+
+@media only screen and (min-width: 1024px) {
+  header .wrapper {
+    flex-direction: row;
+  }
+
+  header .left-col {
+    justify-content: flex-start;
+  }
+
+  .menu {
+    width: auto;
+  }
+}
+
+/* ### For desktop: ### */
+
+@media only screen and (min-width: 1440px) {
+  header .wrapper {
+    max-width: 1200px;
+  }
+
+  header li:last-child > a {
+    padding-right: 0;
+  }
+}

@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 import { lngs } from '../../data/lngs'
+
+import './header.css'
 
 export default function Header() {
   const { t, i18n } = useTranslation()
@@ -25,26 +28,26 @@ export default function Header() {
       <div className="wrapper">
         <div className="left-col">
           <h1>
-            <a href="index.html">{t('site.title')}</a>
+            <Link to={`/`}>{t('site.title')}</Link>
           </h1>
         </div>
 
         <div className="right-col">
           <ul className="menu">
             <li>
-              <a href="abstract.html">{t('menu.abstract')}</a>
+              <Link to={`abstract`}>{t('menu.abstract')}</Link>
             </li>
             <li>
-              <a href="landscapes.html">{t('menu.landscapes')}</a>
+              <Link to={`landscapes`}>{t('menu.landscapes')}</Link>
             </li>
             <li>
-              <a href="other.html">{t('menu.other')}</a>
+              <Link to={`other`}>{t('menu.other')}</Link>
             </li>
             <li>
-              <a href="about.html">{t('menu.about')}</a>
+              <Link to={`about`}>{t('menu.about')}</Link>
             </li>
             <li>
-              <a href="contacts.html">{t('menu.contacts')}</a>
+              <Link to={`contacts`}>{t('menu.contacts')}</Link>
             </li>
           </ul>
         </div>

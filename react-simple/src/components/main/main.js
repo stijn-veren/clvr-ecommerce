@@ -1,6 +1,8 @@
+import './main.css'
+
 export default function Main() {
   return (
-    <main>
+    <main id="index">
       <div className="wrapper">
         <div className="main-image">
           <img

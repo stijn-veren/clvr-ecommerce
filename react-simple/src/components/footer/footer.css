@@ -1,0 +1,40 @@
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  margin: 40px 0 10px;
+  color: #263238;
+}
+
+/* ### For mobile phones: ### */
+
+footer {
+  padding-bottom: 30px;
+}
+
+/* ### For tablets: ### */
+
+@media only screen and (min-width: 600px) {
+  footer .wrapper {
+    padding: 0;
+  }
+}
+
+/* ### For small laptop: ### */
+
+@media only screen and (min-width: 1024px) {
+  
+}
+
+/* ### For desktop: ### */
+
+@media only screen and (min-width: 1440px) {
+  footer .wrapper {
+    max-width: 1200px;
+  }
+}

@@ -1,140 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* ######################################################################### */
 /* ### GENERAL ############################################################# */
 
 * {
@@ -156,86 +19,7 @@ a {
   margin: 0 auto;
 }
 
-/* ### menu ### */
-
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.menu li {
-  text-align: center;
-  height: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu a {
-  display: flex;
-  margin: 10px 15px;
-  height: 38px;
-  font-size: 18px;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu .active a {
-  color: #000000;
-  font-weight: 600;
-  border-bottom: 1px solid #78909c;
-}
-
-.menu a:hover,
-.menu a:active {
-  color: #263238;
-}
-
-/* ######################################################################### */
-/* ### HEADER ############################################################## */
-
-header {
-  margin-bottom: 30px;
-}
-
-header .wrapper {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .wrapper.lang {
-  flex-direction: row;
-}
-
-header .wrapper.lang button {
-  background-color: transparent;
-  border: none;
-  font-family: 'Roboto Condensed', sans-serif;
-  cursor: pointer;
-}
-
-header h1 {
-  font-size: 36px;
-  font-weight: 600;
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ######################################################################### */
 /* ### MAIN ################################################################ */
-
-#index main {
-  box-shadow: none;
-}
-
-#index main .wrapper {
-  width: 100%;
-}
 
 main .main-image,
 main .main-image img,
@@ -257,229 +41,23 @@ main .image p {
   text-align: center;
 }
 
-/* ######################################################################### */
-/* ### FOOTER ############################################################## */
-
-footer {
-  text-align: center;
-  font-size: 12px;
-  margin-top: 60px;
-}
-
-#index footer {
-  margin-top: 30px;
-}
-
-.copyright {
-  text-align: center;
-  font-size: 16px;
-  margin: 40px 0 10px;
-  color: #263238;
-}
-
-/* ######################################################################### */
 /* ### RESPONSIVE ########################################################## */
 
 /* ### For mobile phones: ### */
 
-header {
-  padding-top: 40px;
-}
-
-header .wrapper.lang {
-  justify-content: center;
-}
-
-header .left-col {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-header h1 {
-  text-align: left;
-}
-
-#index main .wrapper {
-  width: 100%;
-  margin: 0;
-}
-
-header .wrapper,
-footer .wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 0 15px;
-}
-
-header .wrapper {
-  flex-direction: column;
-}
-
-.menu {
-  flex-direction: column;
-  width: 100%;
-}
-
-.menu li {
-  margin: 0;
-}
-
-.menu a {
-  width: 100%;
-}
-
-#about main .wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-#about main .left-col {
-  margin-bottom: 30px;
-}
-
-#about main .right-col p {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  line-height: 20px;
-}
-
-footer {
-  padding-bottom: 30px;
-}
-
 /* ### For tablets: ### */
 
 @media only screen and (min-width: 600px) {
-  header {
-    padding-top: 60px;
-  }
 
-  header .wrapper,
-  footer .wrapper {
-    padding: 0;
-  }
-
-  header .wrapper.lang {
-    justify-content: flex-end;
-    position: relative;
-    right: -6px;
-  }
-
-  header .left-col {
-    margin-bottom: 0;
-  }
-
-  .menu {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu li:last-child a {
-    margin-right: 0;
-  }
-
-  main {
-    padding: 50px 0;
-    box-shadow: 0 0 1px rgb(0 0 0 / 20%);
-  }
-
-  #index main {
-    padding: 30px 0;
-  }
-
-  #about main .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  #about main .left-col {
-    width: 35%;
-    margin-right: 5%;
-  }
-
-  #about main .right-col {
-    width: 60%;
-  }
-
-  #contacts main .columns,
-  #contacts main .row .row {
-    padding: 10px 0;
-  }
-
-  #contacts main .columns {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #contacts main hr {
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    width: 100%;
-    margin: 50px 0 25px 0;
-  }
-
-  #contacts main form {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  #contacts main .left-col,
-  #contacts main .right-col {
-    width: 50%;
-  }
-
-  #contacts main .left-col {
-    padding-right: 2.5%;
-  }
-
-  #contacts main .right-col {
-    padding-left: 2.5%;
-  }
-
-  #contacts main input,
-  #contacts main textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #78909c;
-    border-radius: 2px;
-  }
 }
 
 /* ### For small laptop: ### */
 
 @media only screen and (min-width: 1024px) {
-  header .wrapper {
-    flex-direction: row;
-  }
-
-  header .left-col {
-    justify-content: flex-start;
-  }
-
-  .menu {
-    width: auto;
-  }
-
   main .wrapper {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  #contacts main .wrapper,
-  #index main .wrapper {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
   }
 
   main .image {
@@ -491,50 +69,17 @@ footer {
   main .image:nth-child(4n) {
     margin-right: 0;
   }
-
-  #about main .wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #about main .left-col {
-    width: 35%;
-    margin-right: 5%;
-  }
-
-  #about main .right-col {
-    width: 60%;
-  }
 }
 
 /* ### For desktop: ### */
 
 @media only screen and (min-width: 1440px) {
-  header .wrapper,
-  main .wrapper,
-  footer .wrapper {
+  main .wrapper {
     max-width: 1200px;
-  }
-
-  header li:last-child > a {
-    padding-right: 0;
   }
 
   main {
     padding: 70px 0;
   }
 
-  #about main .wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #about main .left-col {
-    width: 30%;
-    margin-right: 5%;
-  }
-
-  #about main .right-col {
-    width: 65%;
-  }
 }

@@ -1,0 +1,55 @@
+
+/* ### For mobile phones: ### */
+
+#about .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .left-col {
+  margin-bottom: 30px;
+}
+
+#about .right-col p {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+
+/* ### For small laptop: ### */
+
+@media only screen and (min-width: 1024px) {
+  #about .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about .left-col {
+    width: 35%;
+    margin-right: 5%;
+  }
+
+  #about .right-col {
+    width: 60%;
+  }
+}
+
+/* ### For desktop: ### */
+
+@media only screen and (min-width: 1440px) {
+  #about .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about .left-col {
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  #about .right-col {
+    width: 65%;
+  }
+}
